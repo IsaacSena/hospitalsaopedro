@@ -1,10 +1,19 @@
-<x-layout titulo="cadastrarCliente">
+<?php if (isset($component)) { $__componentOriginal23a33f287873b564aaf305a1526eada4 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal23a33f287873b564aaf305a1526eada4 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.layout','data' => ['titulo' => 'cadastrarCliente']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['titulo' => 'cadastrarCliente']); ?>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/home">
-            <img style="width:100px; height:auto;" src="{{ URL::to('/assets/img/logo3.png') }}">
+            <img style="width:100px; height:auto;" src="<?php echo e(URL::to('/assets/img/logo3.png')); ?>">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +76,7 @@
         <div class="row my-4">
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
-                <img style="width:150px; height:auto;" src="{{ URL::to('/assets/img/logo3.png') }}"> 
+                <img style="width:150px; height:auto;" src="<?php echo e(URL::to('/assets/img/logo3.png')); ?>"> 
                 </div>
                 <p class="text-center">Hospital São Pedro <br>Bem-vindo ao nosso hospital! Oferecemos atendimento de qualidade e cuidado com a sua saúde.</p>
             </div>
@@ -129,4 +138,14 @@
 
     <!-- Fim do footer -->
 
-</x-layout>
+ <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal23a33f287873b564aaf305a1526eada4)): ?>
+<?php $attributes = $__attributesOriginal23a33f287873b564aaf305a1526eada4; ?>
+<?php unset($__attributesOriginal23a33f287873b564aaf305a1526eada4); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal23a33f287873b564aaf305a1526eada4)): ?>
+<?php $component = $__componentOriginal23a33f287873b564aaf305a1526eada4; ?>
+<?php unset($__componentOriginal23a33f287873b564aaf305a1526eada4); ?>
+<?php endif; ?>
+<?php /**PATH C:\hospital\laravel\resources\views/paginas/telaCadastroPaciente.blade.php ENDPATH**/ ?>
