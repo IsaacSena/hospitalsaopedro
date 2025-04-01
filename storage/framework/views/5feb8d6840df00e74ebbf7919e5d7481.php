@@ -1,4 +1,13 @@
-<x-layout titulo="cadastrarCliente">
+<?php if (isset($component)) { $__componentOriginal23a33f287873b564aaf305a1526eada4 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal23a33f287873b564aaf305a1526eada4 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.layout','data' => ['titulo' => 'cadastrarCliente']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['titulo' => 'cadastrarCliente']); ?>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top">
@@ -20,7 +29,7 @@
                 </ul>
                 <form class="d-flex justify-content-center" role="search">
                     <button class="btn btn-outline-primary mx-2" type="button" onclick="window.location.href='/loginPaciente'">Paciente</button>
-                    <button class="btn btn-outline-primary mx-2" type="button" onclick="window.location.href='/loginFuncionario'">Funcionários</button>
+                    <button class="btn btn-outline-primary mx-2" type="button" onclick="window.location.href='/loginFuncionario'">Funcionarios</button>
                     <button class="btn btn-outline-secondary mx-2" type="button" onclick="window.location.href='/loginAdm'">Portal ADM</button>
                 </form>
             </div>
@@ -88,7 +97,7 @@
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">Funcionários</h5>
+                <h5 class="text-uppercase mb-4">Funcionarios</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
                         <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Login</a>
@@ -116,4 +125,14 @@
 
     <!-- Fim do footer -->
 
-</x-layout>
+ <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal23a33f287873b564aaf305a1526eada4)): ?>
+<?php $attributes = $__attributesOriginal23a33f287873b564aaf305a1526eada4; ?>
+<?php unset($__attributesOriginal23a33f287873b564aaf305a1526eada4); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal23a33f287873b564aaf305a1526eada4)): ?>
+<?php $component = $__componentOriginal23a33f287873b564aaf305a1526eada4; ?>
+<?php unset($__componentOriginal23a33f287873b564aaf305a1526eada4); ?>
+<?php endif; ?>
+<?php /**PATH C:\hospital\laravel\resources\views/paginas/telaCadastroPaciente.blade.php ENDPATH**/ ?>
